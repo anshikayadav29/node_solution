@@ -21,8 +21,14 @@ else{
     console.log("This is wrong condition")
 
 }
+//code for node js
 function fruit(item){
     console.log("this is "+item);
 
 }
 console.log("banana");
+console.log("Apple");
+
+for(let a=0;a<=10;a++){
+    console.log(a);
+}
