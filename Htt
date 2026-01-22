@@ -1,0 +1,9 @@
+// raw-http.js
+const net = require("net");
+
+net.createServer(socket => {
+  socket.write(
+    "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\n\r\nRAW HTTP RESPONSE"
+  );
+  socket.end();
+}).listen(5000);
