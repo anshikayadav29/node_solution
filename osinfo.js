@@ -1,6 +1,8 @@
-const http = require("http");
+// os-info.js
 const os = require("os");
 
-http.createServer((req, res) => {
-  res.end("OS Platform: " + os.platform());
-}).listen(5000);
+console.log({
+  platform: os.platform(),
+  cpu: os.cpus().length,
+  memory: os.totalmem()
+});

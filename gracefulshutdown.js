@@ -1,4 +1,4 @@
-// graceful.js
+// graceful-server.js
 const http = require("http");
 
 const server = http.createServer((req, res) => {
@@ -6,7 +6,6 @@ const server = http.createServer((req, res) => {
 });
 
 process.on("SIGINT", () => {
-  console.log("Shutting down...");
   server.close(() => process.exit());
 });
 
